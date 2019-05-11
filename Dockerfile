@@ -3,7 +3,7 @@ MAINTAINER David Parrish <daveparrish@tutanota.com>
 
 RUN useradd -u 1000 mumble \
  && apt-get update \
- && apt-get install -y mumble-server \
+ && apt-get install -y mumble-server libssl1.0-dev \
  && mkdir /data && chown 1000 /data
 
 ADD mumble-server.ini /config/mumble-server.ini
