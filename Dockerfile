@@ -1,5 +1,5 @@
-FROM ubuntu:14.04
-MAINTAINER Knut Ahlers <knut@ahlers.me>
+FROM ubuntu:18.04
+MAINTAINER David Parrish <daveparrish@tutanota.com>
 
 RUN useradd -u 1000 mumble \
  && apt-get update \
